@@ -11,7 +11,7 @@ public class ExtendedSafeArea : MonoBehaviour {
 
     [SerializeField] private SafeAreaType safeAreaType;
     private RectTransform _panel;
-    private Rect _lastSafeArea = new(0, 0, 0, 0);
+    private Rect _lastSafeArea = new Rect(0, 0, 0, 0);
 
     private void Awake() {
         _panel = GetComponent<RectTransform>();
