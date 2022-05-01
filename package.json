@@ -4,8 +4,5 @@
   "Organisation": "Simple Unity Plugins",
   "version": "1.0.0",
   "unity": "2018.4",
-  "description": "Safe area plugin with extended options.",
-  "dependencies":{
-    
-  }
+  "description": "Safe area plugin with extended options."
 }
