@@ -1,0 +1,8 @@
+{
+  "name": "com.sup.extended.safe.area",
+  "displayName": "Extended Safe Area",
+  "Organisation": "Simple Unity Plugins",
+  "version": "1.0.0",
+  "unity": "2018.4",
+  "description": "Safe area plugin with extended options."
+}
