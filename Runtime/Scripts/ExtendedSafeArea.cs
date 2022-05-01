@@ -15,7 +15,11 @@ public class ExtendedSafeArea : MonoBehaviour {
 
     private void Awake() {
         _panel = GetComponent<RectTransform>();
-        Refresh();
+        if (_panel == null) {
+            Debug.LogError("RectTransform component is missing.");
+        } else {
+            Refresh();
+        }
     }
 
     private void Update() {
@@ -35,6 +39,8 @@ public class ExtendedSafeArea : MonoBehaviour {
 
 
     private void ApplySafeArea(Rect r) {
+        if (_panel == null) return;
+        
         _lastSafeArea = r;
 
         var anchorMin = r.position;
